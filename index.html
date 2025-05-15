@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppleStore</title>
+    <link rel="stylesheet" href="css\indexstyle.css">
+
+</head>
+
+<body>
+    <header>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Пошук товарів...">
+        </div>
+        <nav>
+            <div class="dropdown">
+                <a href="#">Каталог товарів</a>
+                <div class="dropdown-content">
+                    <a href="product.html">iPhone</a>
+                    <a href="#">iPad</a>
+                    <a href="#">MacBook</a>
+                    <a href="#">Apple Watch</a>
+                    <a href="#">Аксесуари</a>
+                </div>
+            </div>
+            <a href="about.html">Про нас</a>
+            <a href="#" class="login-btn" id="openModal">Увійти</a>
+        </nav>
+    </header>
+
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <h2>Авторизація</h2>
+            <p>Введіть ваш Email та пароль</p>
+
+            <form action="login.php" method="POST">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <button type="submit">Увійти</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="new-arrivals">
+        <h2>Новинки</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="img/iphone16pro.webp" alt="iPhone 16 Pro 128 GB Black Titanium">
+                <a href="card1.html" class="buy-button">Купити</a>
+                <h3>iPhone 16 Pro 128 GB Black Titanium</h3>
+                <div class="stars">
+                    <span>★★★★★</span>
+                </div>
+                <p class="price">48 999 ₴</p>
+                <p class="old-price">52 999 ₴</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img/applewatch-ultra2.png.webp" alt="Apple Watch Ultra 2 49mm Black Titanium">
+                <a href="card1.html" class="buy-button">Купити</a>
+                <h3>Apple Watch Ultra 2 49mm Black Titanium</h3>
+                <div class="stars">
+                    <span>★★★★★</span>
+                </div>
+                <p class="price">42 599 ₴</p>
+                <p class="old-price">52 699 ₴</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img/iphone16proMax.webp" alt="iPhone 16 Pro Max 256GB Desert Titanium">
+                <a href="card1.html" class="buy-button">Купити</a>
+                <h3>iPhone 16 Pro Max 256GB Desert Titanium</h3>
+                <div class="stars">
+                    <span>★★★★★</span>
+                </div>
+                <p class="price">55 999 ₴</p>
+                <p class="old-price">65 799 ₴</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img/macbookpro16.png.webp" alt="Ноутбук MacBook Pro 16 / Apple M3">
+                <a href="card1.html" class="buy-button">Купити</a>
+                <h3>Ноутбук MacBook Pro 16 / Apple M3</h3>
+                <div class="stars">
+                    <span>★★★★★</span>
+                </div>
+                <p class="price">99 999 ₴</p>
+                <p class="old-price">105 999 ₴</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img/macbookpro14.png.webp" alt="Apple MacBook Pro 14 / Apple M4 Pro">
+                <a href="card1.html" class="buy-button">Купити</a>
+                <h3>Apple MacBook Pro 14 / Apple M4 Pro</h3>
+                <div class="stars">
+                    <span>★★★★★</span>
+                </div>
+                <p class="price">112 599 ₴</p>
+                <p class="old-price">135 899 ₴</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="footer-panel">
+        <div>
+            <h4>Каталог</h4>
+            <a href="product.html"><span class="text_in_footer">iPhone</span></a>
+            <a href="#"><span class="text_in_footer">iPad</span></a>
+            <a href="#"><span class="text_in_footer">MacBook</span></a>
+            <a href="#"><span class="text_in_footer">Apple Watch</span></a>
+            <a href="#"><span class="text_in_footer">Аксесуари</span></a>
+        </div>
+        <div>
+            <h4>Популярне</h4>
+            <a href="product.html"><span class="text_in_footer">iPhone 16 Pro</span> </a>
+            <a href="product.html"><span class="text_in_footer">iPhone 15</span> </a>
+            <a href="#"><span class="text_in_footer">iPhone 15 Pro</span></a>
+            <a href="#"><span class="text_in_footer">iPhone 15 Pro Max</span></a>
+            <a href="#"><span class="text_in_footer">Apple Watch SE</span></a>
+            <a href="#"><span class="text_in_footer">Apple Watch 9</span></a>
+            <a href="#"><span class="text_in_footer">Apple Watch Ultra 2</span></a>
+        </div>
+        <div>
+            <h4>Компанія</h4>
+            <a href="about.html"><span class="text_in_footer">Про нас</span></a>
+            <a href="#"><span class="text_in_footer">Оплата і доставка</span></a>
+        </div>
+        <div>
+            <h4>Контакти</h4>
+            <a href="tel:0991234567"><span class="text_in_footer"> (099) 123-4567</span></a>
+            <a href="support@gmail.com"><span class="text_in_footer">support@gmail.com</span></a>
+            <p><span class="text_in_footer">Працюємо щодня з 10:00 до 20:00</span></p>
+
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.querySelector('.search-bar input');
+            const productCards = document.querySelectorAll('.product-card');
+
+            // Обробник події для пошуку
+            searchInput.addEventListener('input', function () {
+                const searchTerm = searchInput.value.toLowerCase();
+
+                productCards.forEach(card => {
+                    const productName = card.querySelector('h3').textContent.toLowerCase();
+
+                    if (productName.includes(searchTerm)) {
+                        card.style.display = ''; // Показати картку
+                    } else {
+                        card.style.display = 'none'; // Сховати картку
+                    }
+                });
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let modal = document.getElementById("authModal");
+            let openModalBtn = document.getElementById("openModal");
+            let closeModalBtn = document.getElementById("closeModal");
+
+            // Закриваємо модальне вікно при завантаженні сторінки
+            modal.style.display = "none";
+
+            // Відкриваємо модальне вікно при натисканні на "Ввійти"
+            openModalBtn.addEventListener("click", function (event) {
+                event.preventDefault(); // Щоб не було переходу за посиланням
+                modal.style.display = "flex";
+            });
+
+            // Закриваємо модальне вікно при натисканні на "×"
+            closeModalBtn.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+
+            // Закриваємо при кліку поза модальним вікном
+            window.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
