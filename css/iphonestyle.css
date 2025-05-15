@@ -29,148 +29,154 @@
     display: block;
 }
 
-        .product-page {
-            max-width: 1300px;
-            margin: 2rem auto;
-            display: flex;
-            gap: 2rem;
-            padding: 2rem;
-        }
+.product-page {
+    max-width: 1300px;
+    margin: 2rem auto;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
 
-        .product-image img {
-            width: 100%;
-            max-width: 500px;
-            border-radius: 10px;
-        }
+.product-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
 
-        .product-info {
-            max-width: 1200px;
-        }
+.product-info {
+    max-width: 1200px;
+}
 
-        h1 {
-            font-size: 30px;
-            margin-bottom: 1rem;
-        }
+h1 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
 
-        .stars {
-            color: #FFD700;
-            font-size: 1.2rem;
-        }
+.stars {
+    color: #FFD700;
+    font-size: 1.2rem;
+}
 
-        .price-container {
-            display: flex;
-            align-items: baseline;
-            margin-bottom: 1.5rem;
-        }
+.price-container {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+}
 
-        .current-price {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #000000;
-            margin-right: 1rem;
-        }
+.current-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+    margin-right: 1rem;
+}
 
-        .old-price {
-            font-size: 1.5rem;
-            text-decoration: line-through;
-            color: #777;
-        }
+.old-price {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    color: #777;
+}
 
-        .buy-button {
-            background-color: #ffa6008a;
-            color: #000;
-            font-weight: bold;
-            padding: 20px 40px;
-            border: none;
-            border-radius: 40px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
+.buy-button {
+    background-color: #ffa6008a;
+    color: #000;
+    font-weight: bold;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
 
-            .buy-button:hover {
-                background-color: #FFa700;
-            }
+.buy-button:hover {
+    background-color: #FFa700;
+}
 
-        .color-container, .capacity-container {
-            margin-bottom: 1rem; /* Зменшений відступ */
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
+.color-container,
+.capacity-container {
+    margin-bottom: 1rem;
+    /* Зменшений відступ */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
-            .color-container span, .capacity-container span {
-                font-size: 1rem;
-                color: #000000;
-                font-weight: 500;
-            }
+.color-container span,
+.capacity-container span {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 500;
+}
 
-        /* Оформлення кольорового вибору */
-        .color-option {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
+/* Оформлення кольорового вибору */
+.color-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
-        .color-circle {
-            width: 32px; /* Зменшений розмір */
-            height: 32px;
-            border-radius: 50%;
-        }
+.color-circle {
+    width: 32px;
+    /* Зменшений розмір */
+    height: 32px;
+    border-radius: 50%;
+}
 
-        /* Оформлення вибору ємності */
-        .capacity-options {
-            display: flex;
-            gap: 0.5rem;
-        }
+/* Оформлення вибору ємності */
+.capacity-options {
+    display: flex;
+    gap: 0.5rem;
+}
 
-        .capacity-option {
-            padding: 0.3rem 0.8rem;
-            background-color: transparent;
-            border: 2px solid #ffa500;
-            border-radius: 10px;
-            color: #000000;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+.capacity-option {
+    padding: 0.3rem 0.8rem;
+    background-color: transparent;
+    border: 2px solid #ffa500;
+    border-radius: 10px;
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-            .capacity-option:hover, .capacity-option.active {
-                background-color: #ffa500;
-                color: #000;
-                border-color: #ffa500;
-            }
+.capacity-option:hover,
+.capacity-option.active {
+    background-color: #ffa500;
+    color: #000;
+    border-color: #ffa500;
+}
 
-        .advantages {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
+.advantages {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
 
-        .advantage {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: #000000;
-            font-size: 0.9rem;
-        }
+.advantage {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #000000;
+    font-size: 0.9rem;
+}
 
-        /* Оформлення іконки з фоновим колом */
-        .advantage-icon {
-            width: 36px;
-            height: 36px;
-            background-color: rgba(0, 0, 0, 0.1); /* Напівпрозорий сірий фон */
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+/* Оформлення іконки з фоновим колом */
+.advantage-icon {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Напівпрозорий сірий фон */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-            .advantage-icon img {
-                width: 25px;
-                height: 25px;
-            }
+.advantage-icon img {
+    width: 25px;
+    height: 25px;
+}
 
 
 
@@ -264,4 +270,88 @@ nav a:hover {
 
 .text_in_footer {
     opacity: 80%;
+}
+
+/* Темний напівпрозорий фон під формою */
+.form-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+/* Основне вікно форми */
+.purchase-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; /* Білий фон */
+    padding: 20px;
+    border-radius: 10px;
+    color: #000; /* Чорний текст */
+    font-family: "Arial", sans-serif;
+    width: 400px;
+    z-index: 1001;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.purchase-form h2 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.purchase-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #000;
+}
+
+.purchase-form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ffa500; /* Оранжева рамка */
+    border-radius: 20px; /* Менш округлі */
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+}
+
+.purchase-form input::placeholder {
+    color: #aaa;
+}
+
+/* Кнопки */
+.purchase-form button {
+    padding: 10px 20px;
+    background-color: #ffa500; /* Оранжева кнопка */
+    color: #fff; /* Білий текст */
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.purchase-form button:hover {
+    background-color: #ffb733; /* Світліший оранжевий при наведенні */
+}
+
+/* Кнопка "Закрити" інша */
+.purchase-form button.close {
+    background-color: #ccc;
+    color: #000;
 }
