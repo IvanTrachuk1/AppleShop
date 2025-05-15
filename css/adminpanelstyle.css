@@ -148,3 +148,51 @@ h1 {
 .text_in_footer {
     opacity: 80%;
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-container {
+        width: 90%;
+        margin: 2rem auto;
+        padding: 1.5rem;
+    }
+
+    .form-container input {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .add-product-btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .footer-panel {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-panel h4 {
+        margin-top: 1.5rem;
+    }
+}

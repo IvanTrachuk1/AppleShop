@@ -355,3 +355,75 @@ nav a:hover {
     background-color: #ccc;
     color: #000;
 }
+
+
+@media (max-width: 768px) {
+    .product-page {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .product-image img {
+        max-width: 100%;
+    }
+
+    .product-info {
+        max-width: 100%;
+    }
+
+    .price-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .buy-button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 30px;
+    }
+
+    .color-container,
+    .capacity-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .advantages {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .purchase-form {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .footer-panel {
+        grid-template-columns: 1fr;
+        text-align: left;
+        padding: 1rem;
+    }
+}

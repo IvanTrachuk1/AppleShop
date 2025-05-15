@@ -95,44 +95,6 @@ nav a:hover {
     display: block;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .logo img {
-        width: 180px;
-    }
-
-    .search-bar {
-        width: 100%;
-        margin: 1rem 0;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 1rem 0 0 0;
-    }
-
-    .new-arrivals h2 {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .products {
-        justify-content: center;
-    }
-
-    .product-card {
-        width: 90%;
-    }
-
-    .modal-content {
-        width: 90%;
-    }
-}
 
 
 .filter-panel {
@@ -332,5 +294,94 @@ h2 {
         font-size: 1rem;
         margin: 0.5rem 0;
     }
+
+ @media (max-width: 992px) {
+    .main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .filter-panel {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .product-card img {
+        width: 100%;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .search-bar input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+    }
+
+    .footer-panel {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-group label,
+    .filter-panel h3 {
+        font-size: 16px;
+    }
+
+    .product-card h3 {
+        font-size: 1rem;
+    }
+
+    .product-card .price {
+        font-size: 16px;
+    }
+
+    .product-card .old-price {
+        font-size: 0.8rem;
+    }
+
+    .product-card .buy-button {
+        font-size: 12px;
+        top: 5px;
+        right: 5px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}
 
     
