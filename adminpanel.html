@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="css\aboutstyle.css">
-
+    <title>Add Product</title>
+    <link rel="stylesheet" href="css/adminpanelstyle.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="index.html">Головна</a>
             <div class="dropdown">
                 <a href="#">Каталог товарів</a>
                 <div class="dropdown-content">
@@ -24,32 +21,36 @@
                 </div>
             </div>
             <a href="about.html">Про нас</a>
+            <a href="adminpanel.html">Адмін-панель</a>
         </nav>
-        </div>
+    </header>
     </header>
 
-    <main>
-        <div class="main-content">
-            <div>
-                <div class="main-heading">
-                    Команда <span>AppleShop</span> з вами на одній Apple хвилі
-                </div>
-                <div class="subtext">
-                    Ми завжди раді надати консультацію, поділитися інформацією та допомогти у виборі,
-                    адже без сумніву – кожен з наших співробітників
-                    є справжнім експертом з техніки Apple!
-                    В APPLE STORE ви знайдете найкращі ціни
-                    та широкий асортимент товарів на складі!
-                </div>
-            </div>
-            <div class="main-image">
-                <img src="img/abt.jpg" alt="Apple Store">
-            </div>
-        </div>
-    </main>
+    <div class="form-container">
+        <h1>Додати товар</h1>
+        <form id="addProductForm" method="POST" action="addproduct.php" enctype="multipart/form-data">
+            <label>Назва товару:</label>
+            <input type="text" name="productName" required>
+
+            <label>Категорія:</label>
+            <input type="text" name="category" required>
+
+            <label>Ціна:</label>
+            <input type="number" name="price" required>
+
+            <label>Опис товару:</label>
+            <input type="text" name="description" required>
+
+            <label>Додати фото товару:</label>
+            <input type="file" name="image" accept="image/*" required>
+
+            <button type="submit" class="add-product-btn">Додати</button>
+        </form>
+    </div>
+
+
 
     <footer class="footer-panel">
-
         <div>
             <h4>Каталог</h4>
             <a href="product.html"><span class="text_in_footer">iPhone</span></a>
@@ -81,6 +82,32 @@
 
         </div>
     </footer>
-</body>
 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('addProductForm').addEventListener('submit', async function (e) {
+                e.preventDefault(); // Забороняємо стандартне надсилання форми
+
+                const formData = new FormData(this);
+                try {
+                    const response = await fetch('addproduct.php', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    if (response.ok) {
+                        alert('Товар успішно додано!');
+                        this.reset(); // Скидання форми
+                    } else {
+                        alert('Помилка додавання товару.');
+                    }
+                } catch (error) {
+                    alert('Сталася помилка: ' + error.message);
+                }
+            });
+        });
+    </script>
+
+</body>
 </html>
