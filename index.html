@@ -49,7 +49,7 @@
         <div class="products">
             <div class="product-card">
                 <img src="img/iphone16pro.webp" alt="iPhone 16 Pro 128 GB Black Titanium">
-                <a href="card1.html" class="buy-button">Купити</a>
+                <a href="iphone16pm256.html" class="buy-button">Купити</a>
                 <h3>iPhone 16 Pro 128 GB Black Titanium</h3>
                 <div class="stars">
                     <span>★★★★★</span>
@@ -70,17 +70,6 @@
             </div>
 
             <div class="product-card">
-                <img src="img/iphone16proMax.webp" alt="iPhone 16 Pro Max 256GB Desert Titanium">
-                <a href="card1.html" class="buy-button">Купити</a>
-                <h3>iPhone 16 Pro Max 256GB Desert Titanium</h3>
-                <div class="stars">
-                    <span>★★★★★</span>
-                </div>
-                <p class="price">55 999 ₴</p>
-                <p class="old-price">65 799 ₴</p>
-            </div>
-
-            <div class="product-card">
                 <img src="img/macbookpro16.png.webp" alt="Ноутбук MacBook Pro 16 / Apple M3">
                 <a href="card1.html" class="buy-button">Купити</a>
                 <h3>Ноутбук MacBook Pro 16 / Apple M3</h3>
@@ -89,6 +78,17 @@
                 </div>
                 <p class="price">99 999 ₴</p>
                 <p class="old-price">105 999 ₴</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img/iphone16proMax.webp" alt="iPhone 16 Pro Max 256GB Desert Titanium">
+                <a href="card1.html" class="buy-button">Купити</a>
+                <h3>iPhone 16 Pro Max 256GB Desert Titanium</h3>
+                <div class="stars">
+                    <span>★★★★★</span>
+                </div>
+                <p class="price">55 999 ₴</p>
+                <p class="old-price">65 799 ₴</p>
             </div>
 
             <div class="product-card">
@@ -137,56 +137,7 @@
 
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const searchInput = document.querySelector('.search-bar input');
-            const productCards = document.querySelectorAll('.product-card');
-
-            // Обробник події для пошуку
-            searchInput.addEventListener('input', function () {
-                const searchTerm = searchInput.value.toLowerCase();
-
-                productCards.forEach(card => {
-                    const productName = card.querySelector('h3').textContent.toLowerCase();
-
-                    if (productName.includes(searchTerm)) {
-                        card.style.display = ''; // Показати картку
-                    } else {
-                        card.style.display = 'none'; // Сховати картку
-                    }
-                });
-            });
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            let modal = document.getElementById("authModal");
-            let openModalBtn = document.getElementById("openModal");
-            let closeModalBtn = document.getElementById("closeModal");
-
-            // Закриваємо модальне вікно при завантаженні сторінки
-            modal.style.display = "none";
-
-            // Відкриваємо модальне вікно при натисканні на "Ввійти"
-            openModalBtn.addEventListener("click", function (event) {
-                event.preventDefault(); // Щоб не було переходу за посиланням
-                modal.style.display = "flex";
-            });
-
-            // Закриваємо модальне вікно при натисканні на "×"
-            closeModalBtn.addEventListener("click", function () {
-                modal.style.display = "none";
-            });
-
-            // Закриваємо при кліку поза модальним вікном
-            window.addEventListener("click", function (event) {
-                if (event.target === modal) {
-                    modal.style.display = "none";
-                }
-            });
-        });
-
-    </script>
+    <script src="js/script.js"></script>
 
 </body>
-
 </html>
